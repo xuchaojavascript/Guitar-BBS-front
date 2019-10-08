@@ -11,11 +11,35 @@
   margin: 20rpx;
   border-radius: 50%;
 }
-
 .userinfo-nickname {
   color: #aaa;
 }
-
 .usermotto {
   margin-top: 200px;
+}
+
+/* 头部菜单部分 */
+.menu{
+  height:220rpx;
+  width:100%;
+  display: flex;
+  font-size: 26rpx;
+}
+.menu_list{
+  width: 160rpx;
+  height: 220rpx;
+  padding: 0 25rpx;
+}
+.menu_list_title {
+  height: 160rpx;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 160rpx;
+}
+.menu_list_text {
+  height: 60rpx;
+  line-height: 60rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

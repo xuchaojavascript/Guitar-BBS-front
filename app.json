@@ -1,13 +1,44 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/personal/personal",
+    "pages/upload/upload"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "guiter",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#014289",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/imgs/home.png",
+        "selectedIconPath": "pages/imgs/home_active.png"
+      },
+      {
+        "pagePath": "pages/upload/upload",
+        "iconPath": "pages/imgs/add.png",
+        "selectedIconPath": "pages/imgs/add_active.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "pages/imgs/personal.png",
+        "selectedIconPath": "pages/imgs/personal_active.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取位置"
+    }
   },
   "sitemapLocation": "sitemap.json"
 }

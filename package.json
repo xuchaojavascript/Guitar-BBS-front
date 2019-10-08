@@ -1,0 +1,22 @@
+{
+  "name": "guitar-bbs-front",
+  "version": "1.0.0",
+  "description": "吉他社区前端开源代码",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuchaojavascript/Guitar-BBS-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuchaojavascript/Guitar-BBS-front/issues"
+  },
+  "homepage": "https://github.com/xuchaojavascript/Guitar-BBS-front#readme",
+  "dependencies": {
+    "weui-miniprogram": "^0.1.12"
+  }
+}

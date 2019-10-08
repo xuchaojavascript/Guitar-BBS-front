@@ -1,5 +1,17 @@
-<!--index.wxml-->
-<view class="container">
+<!--搜索-->
+<mp-searchbar placeholder="请输入关键字搜索" bindselectresult="selectResult" search="{{searchData}}"></mp-searchbar>
+<!-- 菜单横向滚动 -->
+<scroll-view scroll-x="true">
+  <view class="menu">
+    <view class="menu_list" wx:for="{{menuList}}" wx:key="index" data-index="{{index}}" bindtap="clickMenu">
+      <view class="menu_list_title">{{item.title}}</view>
+      <view class="menu_list_text">{{item.text}}</view>
+    </view>
+  </view>
+</scroll-view>
+<!-- 内容列表 -->
+
+<!-- <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -10,4 +22,4 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-</view>
+</view> -->
